@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -s ls /bin/ls
+ln -s /tmp/sym$./13-symbolic_link ~/bin/ls
