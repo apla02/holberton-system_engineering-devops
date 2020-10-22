@@ -1,0 +1,64 @@
+
+
+    How to create SSH keys
+        ssh-keygen -t rsa
+
+        Generating public/private rsa key pair.
+        Enter file in which to save the key (/home/holberton/.ssh/id_rsa):                     
+        Enter passphrase (empty for no passphrase): 
+        Enter same passphrase again: 
+        Your identification has been saved in /home/holberton/.ssh/id_rsa.
+        Your public key has been saved in /home/holberton/.ssh/id_rsa.pub.
+        The key fingerprint is:
+        SHA256:MCpqG7mpOCOCmcAEPeft404jGlPV7BHpBEALiocPmPo holberton@holberton-ThinkPad-L480
+
+        ->then you open the file where the key-rsa was save
+
+
+    What is the advantage of using #!/usr/bin/env bash over #!/bin/bash
+        The advantage of #!/usr/bin/env bash is that it will use whatever
+        bash executable appears first in the running user’s $PATH variable.
+        Now you do not have to search for a program via the PATH environment 
+        variable. It makes the script more portable. Also, note that it is not
+        a foolproof method. 
+
+    How to use while, until and for loops
+    https://bioinf.comav.upv.es/courses/unix/scripts_bash.html
+    https://likegeeks.com/es/scripting-de-bash-ciclos-for-while/
+    https://www.tutorialspoint.com/unix/until-loop.htm
+
+    How to use if, else, elif and case condition statements
+
+    How to use the cut command
+
+    https://www.geeksforgeeks.org/cut-command-linux-examples/
+
+
+    What are files and other comparison operators, and how to use them
+    
+Returns true if...
+
+-e
+
+    file exists
+-a
+
+    file exists
+
+    This is identical in effect to -e. It has been "deprecated," [1] and its use is discouraged.
+-f
+
+    file is a regular file (not a directory or device file)
+-s
+
+    file is not zero size
+-d
+
+    file is a directory
+-b
+
+    file is a block device
+
+-c
+
+    file is a character device

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script is displaying  a clock,
+#displays hours until 12, and minutes until 59
+
+
+i=0
+while ((i <= 12));
+do
+	j=1
+	echo "Hour": $i
+	while ((j <= 59));
+	do
+		echo $j
+		j=$((j + 1))
+	done
+	i=$((i + 1))
+done
