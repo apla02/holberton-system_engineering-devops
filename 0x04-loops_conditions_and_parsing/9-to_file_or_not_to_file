@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 #Write a Bash script that displays:
 #The content of the current directory, in a list format
-file="holbertonschool"
-if [ -e "$file" ]
+FILE="holbertonschool"
+if [ -e "$FILE" ]
 then
-    echo "$file file exists"
-    if [ -s "$file" ]
+    echo "$FILE file exists"
+    if [ -s "$FILE" ]
     then
         echo "holbertonschool file is not empty"
     else
         echo "holbertonschool file is empty"
     fi
-    if [ -f "$file" ]
+    if [ -f "$FILE" ]
     then
         echo "holbertonschool is a regular file"
     fi
