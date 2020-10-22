@@ -7,7 +7,7 @@ do
 
 	if [ $i -eq 9 ];
 	then
-		echo "hi"
+		echo "Hi"
 	fi
 		echo "Holberton School"
 	i=$((i + 1))
