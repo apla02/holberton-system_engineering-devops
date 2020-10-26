@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# ill the process with an especific name
+pkill -f "./7-highlander"

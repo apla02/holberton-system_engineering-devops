@@ -1,0 +1,54 @@
+
+    What is a PID
+        A PID (i.e., process identification number) is an identification number that is automatically assigned
+        to each process when it is created on a Unix-like operating system. 
+
+    What is a process
+        A process is an executing (i.e., running) instance of a program. Each process is guaranteed a unique PID,
+        which is always a non-negative integer. 
+        since 1( process init) until 32767
+
+    How to find a process’ PID
+        echo $$
+
+    how to run and display all the processes
+
+        ps -aux -f (all format) -H (herarchy)
+        ps aux 
+
+        A : Select all processes
+        u : Select all processes on a terminal, including those of other users
+        x : Select processes without controlling ttys
+
+    To get a name of process, I can  use -l:
+
+        pgrep -l '^[Aa]'
+
+    To get the command line and can use -a:
+
+        pgrep -a '^[Aa]'
+c
+    To infinity loop with a sleep wait I can use sleep
+
+         while :; do echo 'Hit CTRL+C'; sleep 1; done
+        while true; do echo 'Hit CTRL+C'; sleep 1; done
+
+    How to kill a process
+        kill $(pgrep -f ./4-to_infinity_and_beoyond) --> is full information, process contain this name 
+
+        pkill is easier than kill, just need pkill and -flags and the name of the process, also could be a path
+
+        killall
+
+    What is a signal
+
+    What are the 2 signals that cannot be ignored
+
+
+sources: https://www.enmimaquinafunciona.com/pregunta/137762/comando-para-filtrar-procesos-por-nombre
+https://www.cyberciti.biz/faq/bash-infinite-loop/
+https://askubuntu.com/questions/27501/whats-the-difference-between-killall-and-pkill
+https://likegeeks.com/linux-bash-scripting-awesome-guide-part5/
+
+
+
