@@ -79,6 +79,9 @@ HTTP/HTTPS: 80/443
 
 >### What tool/protocol is often used to check if a device is connected to a network
 >- Ping is a computer network administration software utility used to test the reachability of a host on an Internet Protocol (IP) network. It is available for virtually all operating systems that have networking capability, including most embedded network administration software. 
+
+>to use ping in linux
+>ping -c 5
 >### What is ICMP
 
 >- The Internet Control Message Protocol (ICMP) is a supporting protocol in the Internet protocol suite. It is used by network devices, including routers, to send error messages and operational information indicating success or failure when communicating with another IP address, for example, an error is indicated when a requested service is not available or that a host or router could not be reached.[2] ICMP differs from transport protocols such as TCP and UDP in that it is not typically used to exchange data between systems, nor is it regularly employed by end-user network applications (with the exception of some diagnostic tools like ping and traceroute). 
@@ -100,3 +103,4 @@ Sources:
 >- how-do-i-find-out-what-ports-are-listeningopen-on-my-linuxfreebsd-server/
 >- https://linux.die.net/man/8/netstat
 >- https://linux.die.net/man/8/ping
+>- https://www.reiser.cl/bash-validar-archivos-pasados-como-parametros/

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# show the list of ports
+netstat --listen -p
