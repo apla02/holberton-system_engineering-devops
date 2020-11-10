@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# kill the process with an especific name
+# kill the process with pkill command
 pkill -f "./4-to_infinity_and_beyond"

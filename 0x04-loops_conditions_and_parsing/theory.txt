@@ -62,3 +62,6 @@ Returns true if...
 -c
 
     file is a character device
+
+Write a Bash script that displays the content of the file
+https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/

@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-#Write a Bash script that displays:
-#The content of the current directory, in a list format
+#check if file exists
 FILE="holbertonschool"
 if [ -e "$FILE" ]
 then
