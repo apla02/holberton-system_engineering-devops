@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #Ping the IP 5 times
 cp /etc/hosts ~/hosts.new
 sed -i s/^172.*$/'127.0.0.2 localhost'/g ~/hosts.new 
