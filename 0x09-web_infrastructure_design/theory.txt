@@ -1,0 +1,57 @@
+      You must be able to explain some specifics about this infrastructure: 
+    • What is a server 
+        A server is a device, a virtual device or computer program or providing functionality for other programs or devices, called “clients”.
+    
+    • What is the role of the domain name 
+        serve to identify Internet resources, such as computers, networks, and services, with a text-based label that is easier to memorize than
+        the numerical addresses used in the Internet protocols. A domain name may represent entire collections of such resources or individual instances.
+
+    • What type of DNS record www is in www.foobar.com
+        CNAME 
+    • What is the role of the web server 
+        A web server is a software that serves web pages to clients upon their request, it does this over the protocol HTTP.
+
+    • What is the role of the application server
+        An application server is a server that hosts applications. Application server frameworks are software frameworks for building application servers.
+        An application server framework provides both facilities to create web applications and a server environment to run them.
+
+    • What is the role of the database 
+        Is a collection of information that is stored and organized so that it can be easily accessed, updated and managed. it comunnicate with the app server and the codebase
+
+
+    • What is the server using to communicate with the computer of the user requesting the website 
+        TCP /IP through HTTP port 80
+    • What distribution algorithm your load balancer is configured with and how it works 
+        There are many. For instance: 
+    • Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both 
+        
+    • How a database Primary-Replica (Master-Slave) cluster works 
+    
+    • What is the difference between the Primary node and the Replica node in regard to the application
+    
+    • What are firewalls for
+        is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.
+        A firewall typically establishes a barrier between a trusted network and an untrusted network, such as the Internet 
+    
+    • Why is the traffic served over HTTPS 
+        site served over https is more secure. Since https uses the secure port 443, which encrypts outgoing information, it is much more difficult
+        for people to spy on your site's information. Regular http, on the other hand, uses port 80, which sends information via plain text.
+    • What monitoring is used for 
+        Its purpose is to collect and analyze data from the IT infrastructure
+        and to leverage that data to improve business results and drive value creation for the organization.
+
+    • How the monitoring tool is collecting data 
+        Application monitoring: getting data about your running software and making sure it is behaving as expected
+        Server monitoring: getting data about your virtual or physical server and making sure they are not overloaded (could be CPU, memory, disk or network overload)
+
+    • Explain what to do if you want to monitor your web server QPS
+      
+    You must be able to explain what the issues are with this infrastructure: 
+    • SPOF 
+    • Downtime when maintenance needed (like deploying new code web server needs to be restarted) 
+    • Cannot scale if too much incoming traffic 
+    • Security issues (no firewall, no HTTPS) 
+    • No monitoring
+    • Why terminating SSL at the load balancer level is an issue 
+    • Why having only one MySQL server capable of accepting writes is an issue 
+    • Why having servers with all the same components (database, web server and application server) might be a problem 
