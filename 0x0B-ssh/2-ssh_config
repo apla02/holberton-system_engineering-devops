@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Your SSH client configuration must be configured to use the private key ~/.ssh/holberton
+# Your SSH client configuration must be configured to refuse to authenticate using a password
+
+Host *
+    PasswordAuthentication no
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+    IdentityFile ~/.ssh/holberton
