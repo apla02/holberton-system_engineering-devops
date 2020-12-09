@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Install nginx on your web-01 server
+# Nginx should be listening on port 80
+# write a Bash script that configures a new Ubuntu machine to respect above requirements
+apt-get update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+service nginx start
+echo "Holberton School" | tee /var/www/html/index.html
