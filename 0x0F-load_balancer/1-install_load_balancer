@@ -3,6 +3,6 @@
 sudo apt-get update
 sudo apt-get install haproxy=1.6.\*
 sudo sed -i '10 i \\tENABLED=1' /etc/default/haproxy
-sudo sed -i '36 i \\tbackend http_back\n\balance roundrobin\nmode http\nserver web-01 34.75.211.58:80 check\nserver web-02 34.74.11.193:80 check' /etc/haproxy/haproxy.cfg
-sudo sed -i '36 i \\tfrontend http_front\n\tbind *:80\nmode http\ndefault_backend http_back' /etc/haproxy/haproxy.cfg
-sudo service nginx restart
+sudo sed -i '36 i \\tbackend http_back\t\balance roundrobin\tmode http\tserver web-01 34.75.211.58:80 check\tserver web-02 34.74.11.193:80 check' /etc/haproxy/haproxy.cfg
+sudo sed -i '36 i \\tfrontend http_front\t\tbind *:80\tmode http\tdefault_backend http_back' /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
