@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+return all of the information using API request
+"""
 import csv
 import json
 import requests
