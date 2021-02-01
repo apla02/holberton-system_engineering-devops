@@ -13,18 +13,19 @@ def get_information(user_id):
     """
     response = requests.get(
         'https://jsonplaceholder.typicode.com/users/{}'.format(user_id))
-    response_json = response.json()  # retrieve a dict
+    response_json = response.json()
+    name = response_json.get('name')
 
     response_todos = requests.get(
         'https://jsonplaceholder.typicode.com/todos?userId={}'.format(
             user_id))
-    r_json_todos = response_todos.json()  # retrieve a dict
+    r_json_todos = response_todos.json()
 
     file_csv = "{}.csv".format(user_id)
-    with open(file_csv, 'w') as fd:
+    with open(file_csv, 'a') as fd:
         for task in r_json_todos:
             csv_data = "\"{}\",\"{}\",\"{}\",\"{}\"\n".format(
-                user_id, response_json.get('name'),
+                user_id, name,
                 task.get('completed'), task.get('title'))
             fd.write(csv_data)
 
