@@ -14,7 +14,7 @@ def get_information(user_id):
     response = requests.get(
         'https://jsonplaceholder.typicode.com/users/{}'.format(user_id))
     response_json = response.json()
-    name = response_json.get('name')
+    name = response_json.get('username')
 
     response_todos = requests.get(
         'https://jsonplaceholder.typicode.com/todos?userId={}'.format(
