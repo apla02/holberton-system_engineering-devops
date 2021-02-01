@@ -20,16 +20,16 @@ def get_information(employee_id):
 
     total_tasks = len(response_json_todos)
     done_tasks = 0
-    tasks_titles = []
+    tasks_titles = ""
     for task in response_json_todos:
         if task.get('completed') is True:
             done_tasks += 1
-            tasks_titles.append(task.get('title'))
+            tasks_titles += "\t {}\n".format(task.get('title'))
 
     print("Employee {} is done with tasks({}/{}):".format(
         response_json.get('name'), done_tasks, total_tasks))
-    for i in tasks_titles:
-        print("\t{}".format(i))
+    print(tasks_titles[:-1])
+
 
 if __name__ == "__main__":
     get_information(argv[1])
