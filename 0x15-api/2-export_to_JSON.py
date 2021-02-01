@@ -28,7 +28,7 @@ def get_information(user_id):
         dic = {}
         dic['task'] = task.get('title')
         dic['completed'] = task.get('completed')
-        dic['username'] = response_json.get('name')
+        dic['username'] = response_json.get('username')
         list_objects.append(dic)  # include task in a list of dictionaries
         json_data = {"{}".format(user_id): list_objects}
 
