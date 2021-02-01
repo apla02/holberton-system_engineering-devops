@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+return all of the information about an user_id
+"""
 import requests
 from sys import argv
 
@@ -28,5 +31,5 @@ def get_information(employee_id):
     for i in tasks_titles:
         print("\t{}".format(i))
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     get_information(argv[1])
