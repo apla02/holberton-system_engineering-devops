@@ -14,7 +14,10 @@ def number_of_subscribers(subreddit):
     header = {'User-Agent': 'Mozilla/5.0 Gecko/20100101 Firefox/84.0'}
     response = requests.get('https://www.reddit.com/r/{}/about.json'.format(
         subreddit), headers=header)
-    subscribers = response.json().get("data").get("subscribers")
-    if subscribers:
+    try:
+        subscribers = response.json().get("data").get("subscribers")
+        if subscribers is None:
+            raise TypeError
         return subscribers
-    return 0
+    except:
+        return 0
